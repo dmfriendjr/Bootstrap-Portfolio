@@ -1,17 +1,45 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.nav-link {
+	font-size: 20px;
+}
+
+.name-logo {
+	background-color: #4aaaa5;
+	color: white;
+	font-size: 30px;
+}
+
+.name-logo p {
+	color: white;
+}
+
+.name-logo:hover p{
+	color: #4aaaa5;
+}
+
+.social-media-link:hover {
+	transform: scale(1.2);
+	box-shadow: 5px 5px 5px 0px #cccccc;
+	animation: .2s ease;
+}
+
 .portfolio-wrapper {
 	position: relative;
 	margin-bottom: 15px;
 }
 
-html, body {
-	height: 100%;
+h1, h2, h3 {
+	color: #4aaaa5;
 }
 
 .portfolio-wrapper h3 {
 	position: absolute;
 	top: 70%;
-	left: 0;
-	background-color: teal;
+	background-color: #4aaaa5;
 	width: 100%;
 	text-align: center;
 	max-width: 260px;
@@ -19,11 +47,28 @@ html, body {
 	color: #ffffff;
 }
 
-footer {
-	background-color: #777777;
+.portfolio-image {
+	max-width: 260px;
+	display: block;
 }
+
 
 footer p {
 	color: white;
 	padding: 15px 0;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-image: url("../images/paper_fibers.png");  
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #777777;
 }
