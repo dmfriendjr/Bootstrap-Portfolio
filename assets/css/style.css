@@ -6,32 +6,49 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   background-image: url("../images/paper_fibers.png");
   color: #777777;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+
+
 h1, h2, h3 {
 	color: #4aaaa5;
-	font-family: 'Georgia', Times, Times New Roman, serif;	
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;	
+}
+
+.navbar {
+	border-bottom: 2px solid #cccccc;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+	line-height: 90px;
+	height: 90px;
+	padding-top: 0;
 }
 
 .nav-link {
 	font-size: 20px;
 }
 
+.navbar-toggle {
+	margin-top: 25px;
+}
+
 .name-logo {
 	background-color: #4aaaa5;
-	color: white;
-	font-size: 30px;
 }
 
-.name-logo p {
+.name-logo h1 {
 	color: white;
+	line-height: 45px;
 }
 
-.name-logo:hover p{
+.name-logo:hover h1{
 	color: #4aaaa5;
 }
 
@@ -41,7 +58,7 @@ h1, h2, h3 {
 
 .social-media-link:hover {
 	transform: scale(1.2);
-	box-shadow: 5px 5px 5px 0px #cccccc;
+	box-shadow: 5px 5px 5px 0 #cccccc;
 	transition: all .2s ease-in;
 }
 
@@ -69,6 +86,7 @@ h1, h2, h3 {
 
 h3.portfolio-caption {
 	color: #ffffff;
+	font-weight: normal;
 }
 
 .portfolio-image {
@@ -88,14 +106,23 @@ h3.portfolio-caption {
 
 /*Footer Styles*/
 footer p {
-	color: white;
-	padding: 15px 0;
+	color: #ffffff;
+	font-size: 12px;
+	margin-top: 30px;
 }
 
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 80px;
   background-color: #777777;
+  border-top: 8px solid #4aaaa5;
+}
+
+/* Need this to override bootstrap margin-left on navbar brand */
+@media (min-width: 768px) {
+	.navbar .container .navbar-brand {
+		margin-left: 0px;
+	}
 }

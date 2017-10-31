@@ -3,46 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	
 	<script src="https://use.fontawesome.com/fa4e81794d.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="assets/css/style.css" rel="stylesheet">
 	<title>Contact</title>
 </head>
 <body>
 	<!--Navbar with collapse feature -->
 	<nav class="navbar navbar-default navbar-static-top">
-	  <div class="container">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand name-logo" href="index.html"><p>David Friend</p></a>
-	    </div>
-	    <div id="navbar" class="navbar-collapse collapse navbar-right">
-	      <ul class="nav navbar-nav">
-	        <li>
-	        	<a class="nav-link" href="index.html">
-	        		<i class="fa fa-male fa-fw" aria-hidden="true"></i>About
-	        	</a>
-	        </li>
-	        <li>
-	        	<a class="nav-link" href="portfolio.html">
-	        		<i class="fa fa-briefcase fa-fw" aria-hidden="true"></i>Portfolio
-	        	</a>
-	        </li>
-	        <li class="active">
-	        	<a class="nav-link" href="#">
-	        		<i class="fa fa-address-card fa-fw" aria-hidden="true"></i>Contact
-	        	</a>
-	        </li>
-	      </ul>
-	    </div><!--/.nav-collapse -->
-	  </div>
+		<div class="container">
+			<div class="navbar-header">
+				<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand name-logo" href="index.html">
+				<h1>David Friend</h1></a>
+			</div>
+			<div class="navbar-collapse collapse navbar-right" id="navbar">
+				<ul class="nav navbar-nav">
+					<li>
+						<a class="nav-link" href="index.html"><i aria-hidden="true" class="fa fa-male fa-fw"></i>About</a>
+					</li>
+					<li>
+						<a class="nav-link" href="portfolio.html"><i aria-hidden="true" class="fa fa-briefcase fa-fw"></i>Portfolio</a>
+					</li>
+					<li class="active">
+						<a class="nav-link" href="#"><i aria-hidden="true" class="fa fa-address-card fa-fw"></i>Contact</a>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
 	</nav>
 	<div class="container">
 		<div class="row">
@@ -54,62 +43,50 @@
 					</div>
 					<div class="panel-body">
 						<div class="form-group contact-form">
-							<label for="name">Name</label>
-							<input type="text" class="form-control" id="name">
+							<label for="name">Name</label> <input class="form-control" id="name" type="text">
 						</div>
 						<div class="form-group">
-							<label for="email">Email</label>
-							<input type="email" class="form-control" id="email">
+							<label for="email">Email</label> <input class="form-control" id="email" type="email">
 						</div>
 						<div class="form-group">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" class="form-control" cols="30" rows="10"></textarea>
-						</div>
-						<button type="button" class="btn btn-success" id="contact-submit-btn">
-							<i class="fa fa-envelope fa-fw" aria-hidden="true"></i>Submit
-						</button>
+							<label for="message">Message</label> 
+							<textarea class="form-control" cols="30" id="message" name="message" rows="10"></textarea>
+						</div><button class="btn btn-success" id="contact-submit-btn" type="button"><i aria-hidden="true" class="fa fa-envelope fa-fw"></i>Submit</button>
 					</div>
 				</div>
-			</div>
-			<!-- Social Media Aside -->
+			</div><!-- Social Media Aside -->
 			<div class="col-md-4">
 				<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3>Connect with Me</h3>
-						</div>
+					<div class="panel-heading">
+						<h3>Connect with Me</h3>
+					</div>
 					<div class="panel-body">
 						<div class="row">
 							<div class="col-md-4 col-md-offset-0 col-xs-3 col-xs-offset-2">
-								<a href="https://github.com/dmfriendjr" target="_blank">
-									<img class="social-media-link img-responsive" src="assets/images/githubLogo.png" alt="Github Profile">
-								</a>
+								<a href="https://github.com/dmfriendjr" target="_blank"><img alt="Github Profile" class="social-media-link img-responsive" src="assets/images/githubLogo.png"></a>
 							</div>
 							<div class="col-md-4 col-xs-3">
-								<a href="https://www.linkedin.com/in/david-friend-jr-38427b146/" target="_blank">
-									<img class="social-media-link img-responsive" src="assets/images/linkedinLogo.png" alt="Linkedin Profile">
-								</a>
+								<a href="https://www.linkedin.com/in/david-friend-jr-38427b146/" target="_blank"><img alt="Linkedin Profile" class="social-media-link img-responsive" src="assets/images/linkedinLogo.png"></a>
 							</div>
 							<div class="col-md-4 col-xs-3">
-								<a href="https://stackoverflow.com/users/8389681/david-friend?tab=profile" target="_blank">
-									<img class="social-media-link img-responsive" src="assets/images/stackoverflowLogo.png" alt="Stackoverflow Profile">
-								</a>
+								<a href="https://stackoverflow.com/users/8389681/david-friend?tab=profile" target="_blank"><img alt="Stackoverflow Profile" class="social-media-link img-responsive" src="assets/images/stackoverflowLogo.png"></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!--Sticky footer-->
+	</div><!--Sticky footer-->
 	<footer class="footer">
-	  <div class="container">
-	    <div class="text-muted">
-			<p class="text-center"><i class="fa fa-copyright" aria-hidden="true"></i>2017 David Friend</p>
-	    </div>
-	  </div>
-	</footer>	
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<div class="container">
+			<div class="text-muted">
+				<p class="text-center"><i aria-hidden="true" class="fa fa-copyright"></i>2017 David Friend</p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
 </body>
 </html>
